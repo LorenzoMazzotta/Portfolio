@@ -50,10 +50,10 @@ Remember, this is not a competition! This is all about mutual support, sharing a
 
 #### Helpful Links
 
-[Developer Portfolios to Inspire](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
-[35 Web Developer Portfolio Examples](https://skillcrush.com/blog/web-developer-portfolios/)
-[More Portfolio Examples](https://www.sliderrevolution.com/design/web-developer-portfolio-examples/)
-[How to Build a Stunning Portfolio](https://www.sitepoint.com/how-to-build-a-stunning-portfolio-website-as-a-web-developer/)
-[How to Build a Web Developer Portfolio](https://brainstation.io/career-guides/how-to-build-a-web-developer-portfolio)
-[A Comprehensive Website Planning Guide](https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/)
-[Portfolio Tips](https://designmodo.com/dev-portfolio-tips/)
+- [Developer Portfolios to Inspire](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/)
+- [35 Web Developer Portfolio Examples](https://skillcrush.com/blog/web-developer-portfolios/)
+- [More Portfolio Examples](https://www.sliderrevolution.com/design/web-developer-portfolio-examples/)
+- [How to Build a Stunning Portfolio](https://www.sitepoint.com/how-to-build-a-stunning-portfolio-website-as-a-web-developer/)
+- [How to Build a Web Developer Portfolio](https://brainstation.io/career-guides/how-to-build-a-web-developer-portfolio)
+- [A Comprehensive Website Planning Guide](https://www.smashingmagazine.com/2018/02/comprehensive-website-planning-guide-part1/)
+- [Portfolio Tips](https://designmodo.com/dev-portfolio-tips/)

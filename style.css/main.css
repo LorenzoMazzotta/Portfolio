@@ -31,13 +31,14 @@ body {
   margin: 2rem 0;
   font-weight: bold;
   list-style: none;
+  font-size: 2rem;
 }
 
 .navbar ul li a {
   padding: 2rem;
   transition: all 0.5s ease;
   text-decoration: none;
-  color: rgba(198, 186, 186, 0.654);
+  color: rgb(244, 244, 244);
 }
 
 .navbar ul li a:hover {
@@ -67,8 +68,9 @@ body {
 .name {
   margin: 0 auto;
   text-align: center;
-  margin-top: 15rem;
-  color: rgba(212, 225, 237, 0.517);
+  margin-top: 25rem;
+  color: rgba(218, 218, 218, 0.986);
+  font-size: 2rem;
 }
 
 /* MAIN  INTRO/IMG*/
@@ -112,6 +114,7 @@ body {
   color: rgb(126, 121, 121);
 }
 
+/* Button */
 .myButton {
   box-shadow: 1px 3px 24px -5px #1c1b1841;
   background: linear-gradient(to bottom, #282827f0 5%, #1c1b1a 100%);
@@ -122,7 +125,7 @@ body {
   cursor: pointer;
   color: #e1e1e1;
   font-family: Arial;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: bold;
   padding: 5px 5px;
   text-decoration: none;
@@ -132,8 +135,10 @@ body {
   letter-spacing: 1px;
 }
 .myButton:hover {
-  background: linear-gradient(to bottom, #fff7e0 5%, #eae0c2 100%);
-  background-color: #fff7e0;
+  background: linear-gradient(to bottom, #f1db9b8e 5%, #d1d4bdad 100%);
+  background-color: #d3c6a1;
+  color: #000000;
+  border: 1px solid #00000054;
 }
 .myButton:active {
   position: relative;
@@ -141,31 +146,32 @@ body {
 }
 /* MAIN-SKILLS */
 
-.skills {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .skills-icons {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* /* justify-content: center; */
-  align-items: center; */
+  align-items: center;
   justify-content: space-between;
- 
-  width: 100%;
+  width: 90%;
+  height: 60vh;
   background-color: blueviolet;
   background-color: rgba(128, 128, 128, 0.106);
   margin: 0 auto;
   box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -webkit-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -moz-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .skills-icons-1,
 .skills-icons-2 {
   display: flex;
+}
+
+.skills-icons-2 {
+  position: relative;
+  bottom: 8%;
 }
 
 .icon {
@@ -182,8 +188,43 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   justify-content: space-around;
-  margin-left: 5rem;
-  margin-top: 2rem;
+  margin-left: 8rem;
+  margin-top: 4rem;
+}
+
+/* Portfolio */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(128, 128, 128, 0.106);
+  justify-content: space-around;
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.portfolio-1 img {
+  width: 45rem;
+  border-radius: 15px;
+  border: 3px solid white;
+}
+
+.portfolio-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.monogram img {
+  height: 23rem;
+}
+
+.fa-2x {
 }
 
 /* BACKGROUND  */

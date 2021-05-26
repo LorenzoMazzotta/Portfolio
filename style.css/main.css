@@ -21,11 +21,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(203, 52, 52);
+  background-color: rgba(237, 128, 128, 0.51);
   position: fixed;
-  top: 0;
+  top: 1rem;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -33,14 +34,15 @@ body {
   margin: 2rem 0;
   font-weight: bold;
   list-style: none;
-  font-size: 2rem;
+  font-size: 2.3rem;
+  opacity: ;
 }
 
 .navbar ul li a {
   padding: 2rem;
   transition: all 0.5s ease;
   text-decoration: none;
-  color: rgb(98, 230, 61);
+  color: rgb(100, 154, 162);
 }
 
 .navbar ul li a:hover {
@@ -65,7 +67,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 30vw;
-  animation: hue 7s infinite alternate;
+  animation: hue 2s infinite alternate;
 }
 
 #iam::after {
@@ -76,7 +78,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -3;
+  z-index: -2;
   filter: blur(1rem);
   /* transform: scale(1); */
 }
@@ -86,19 +88,53 @@ body {
     filter: hue-rotate(0);
   }
   to {
-    filter: hue-rotate(130deg);
+    filter: hue-rotate(150deg);
   }
 }
 
 .name {
   margin: 0 auto;
   text-align: center;
-  margin-top: 25rem;
+  margin-top: 18rem;
   color: rgb(154, 27, 27);
-  font-size: 2rem;
+  font-size: 2.8rem;
+  padding: 2rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(31, 28, 155, 0.633),
+    rgba(34, 53, 200, 0.893)
+  );
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #297fc9,
+    25px 25px 0px 0px #468ce8, 7px 0px 7px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff,
+    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #3782c3,
+    25px 25px 0px 0px #538bd3, 7px 0px 7px 5px rgba(43, 129, 176, 0);
+}
+
+.heading-1 {
+  color: aliceblue;
+  letter-spacing: 3px;
+}
+
+.heading-3 {
+  color: aliceblue;
+  padding: 2rem;
+  letter-spacing: 3px;
 }
 
 /* MAIN  INTRO/IMG*/
+
+.heading-about-me {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: rgba(41, 42, 52, 0.989);
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
 
 .about {
   display: flex;
@@ -106,7 +142,7 @@ body {
   background-color: rgba(128, 128, 128, 0.106);
   box-sizing: border-box;
   padding: 3rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 }
 
 .pic {
@@ -135,10 +171,12 @@ body {
 
 .heading {
   text-align: center;
-  margin-bottom: 2rem;
-  color: rgba(87, 82, 82, 0.914);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: rgba(87, 82, 82, 0.989);
   font-size: 3rem;
   text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 /* Button */
@@ -157,6 +195,7 @@ body {
   width: 10rem;
   position: relative;
   left: 107rem;
+  margin-top: 1.5rem;
 }
 .myButton:hover {
   background: linear-gradient(to bottom, #f1db9b8e 5%, #d1d4bdad 100%);
@@ -164,10 +203,18 @@ body {
   color: #000000;
   border: 1px solid #00000054;
 }
-/* .myButton:active {
-  position: relative;
-  top: 1px;
-} */
+
+.my-name {
+  letter-spacing: 2px;
+  font-weight: bolder;
+  color: rgba(177, 37, 37, 0.88);
+}
+
+.main-p {
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+
 /* MAIN-SKILLS */
 
 .skills-icons {
@@ -184,8 +231,6 @@ body {
   box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -webkit-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -moz-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
-  margin-bottom: 4rem;
-  margin-top: 4rem;
 }
 
 .skills-icons-1,
@@ -217,45 +262,60 @@ body {
   margin-top: 4rem;
 }
 
-/* Portfolio */
+/* Work */
 .portfolio-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   background-color: rgba(128, 128, 128, 0.106);
   box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -webkit-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
   -moz-box-shadow: 1px -2px 25px -10px rgba(138, 126, 126, 0.45);
-  justify-content: space-around;
+
   border-radius: 12px;
   width: 90%;
   height: 50vh;
   margin: 0 auto;
-  padding: 4rem;
+  /* padding: 4rem;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem; */
 }
 
 .portfolio-1 img {
-  width: 45rem;
+  width: 400px;
+
   border-radius: 15px;
   border: 3px solid white;
 }
 
 .portfolio-1 {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.monogram img {
-  height: 23rem;
+.fa-github-square {
+  color: #3c9bdf;
+  background-color: #289fed;
 }
 
-.fa-2x {
-  color: rgb(88, 88, 88);
-}
+/* .portfolio-1 a {
+  display: block;
+  width: 70%;
+  height: 25rem;
+  border-radius: 15px;
+  border: 3px solid white;
+} */
+
+/* .monogram img {
+  height: 23rem;
+} */
+
+/* .fa-2x {
+  color: rgb(135, 19, 19);
+} */
 
 /* CONTACT */
 
@@ -271,6 +331,7 @@ body {
   box-sizing: border-box;
   border-radius: 12px;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .contact-form {
@@ -284,13 +345,14 @@ body {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  margin: 16px 0;
+  margin: 30px 0;
   border: 0;
   background-color: rgba(17, 17, 17, 0.849);
-  padding: 20px 40px;
+  padding: 25px 40px;
   outline: none;
   color: #ddd;
   transition: 0.4s;
+  font-size: 1.5rem;
 }
 
 .contact-form-text:focus {
@@ -337,32 +399,4 @@ footer {
   font-size: 2rem;
 }
 
-/*/* BACKGROUND  */
-/* .pic {
-  height: 100vh;
-  background: url(../assets/led.jpg) center;
-  background-size: cover;
-  animation: hue 10s infinite alternate;
-} */
-
-/* #iam::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  filter: blur(2);
-  transform: scale(1);
-}
-
-@keyframes hue {
-  from {
-    filter: hue-rotate(200);
-  }
-  to {
-    filter: hue-rotate(370deg);
-  }
-} */
+/* Media Query */
